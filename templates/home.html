@@ -1,0 +1,33 @@
+<html>
+    <body style="background-color:rgb(27, 29, 29);">
+        <h1 style="color:#83e0aa;font-family:Verdana;">
+            Welcome to the Trace App!<br> 
+            We will help you sort out your product reviews.
+        </h1>
+        <h2 style="color:#83e0aa;font-family:Verdana;">Do the following to find the overall sentiment of the customer reviews of an Amazon product: </h2>
+        <p style="color:#83e0aa;font-family:Verdana;">
+        Step 1: Find a product on 
+        <a style="color:#4d84cc;font-family:Verdana;" href = "https://www.amazon.in/" target="_blank">Amazon India</a>
+        <br>
+        <br>
+        Step 2: Scroll down to the bottom of the products page.
+        <br>
+        <br>
+        Step 3: Click on "See all reviews".
+        <br>
+        <br>
+        <img src="https://docs.google.com/uc?id=1WEhmZwtMrvfIZgbxdIvAN6OtbRz5V2lz" alt="instructions-image" width="900" height="500">
+        <br>
+        <br>
+        Step 4: Copy the link of that page and paste it below.
+        </p>
+        <form method="POST", action="">
+            {{ form.hidden_tag() }}
+            <b><p style="color:#83e0aa;">{{ form.review.label() }}</p></b>
+            {{ form.review(class="form-control",size="100") }}
+            <br>
+            <br>
+            {{ form.submit(class="btn btn-lg btn-block btn-primary",style="color:#117239;") }}
+        </form>
+    </body> 
+</html>

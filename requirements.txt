@@ -1,0 +1,10 @@
+Flask>=1.0,<=1.1.2
+azure-core==1.15.0
+Flask-WTF==0.15.1
+azure-ai-textanalytics==5.1.0b7
+bs4==0.0.1
+requests==2.25.1
+scikit-learn==0.24.2
+nltk==3.6.2
+pandas==1.2.5
+networkx==2.5.1
